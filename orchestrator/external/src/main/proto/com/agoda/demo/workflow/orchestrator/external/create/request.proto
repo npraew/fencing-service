@@ -1,0 +1,21 @@
+syntax = "proto3";
+package com.agoda.demo.workflow.orchestrator.external.create;
+
+import "com/agoda/demo/workflow/orchestrator/external/create/flight.proto";
+import "com/agoda/demo/workflow/orchestrator/external/create/hotel.proto";
+
+
+
+message CreateBookingRequest {
+  repeated Product products =1;
+}
+
+message Product {
+    int64 bookingId = 1;
+    ProductDetail detail = 2;
+}
+
+message ProductDetail {
+    FlightInfo flight = 1;
+    HotelInfo hotel = 2;
+}

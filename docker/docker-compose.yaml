@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: app-rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      RABBITMQ_ERLANG_COOKIE: 60d6368a-b4eb-41e1-a021-8e5939b02505
+      RABBITMQ_DEFAULT_USER: devrabbit
+      RABBITMQ_DEFAULT_PASS: 123456
+      RABBITMQ_DEFAULT_VHOST: /
+      RABBITMQ_WEBUI_PORT: 15672
+
+
+volumes:
+  adp-logging:

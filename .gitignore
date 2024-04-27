@@ -1,0 +1,9 @@
+/.gradle/
+/.idea/
+/buildSrc/.gradle/
+/web/client/node_modules/
+/web/client/dist/
+/*/*/build/
+/*/build/
+/build/
+/buildSrc/out/

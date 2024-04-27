@@ -1,0 +1,7 @@
+syntax = "proto3";
+package com.agoda.demo.workflow.orchestrator.external.create;
+
+
+message HotelInfo {
+
+}
